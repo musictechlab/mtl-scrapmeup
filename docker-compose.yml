@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  mtl-resources-mpc:
+  mtl-scrapmeup:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: mtl-resources-mpc
+    container_name: mtl-scrapmeup
     ports:
       - "8501:8501"
     environment:
