@@ -7,14 +7,14 @@ services:
       dockerfile: Dockerfile
     container_name: mtl-scrapmeup
     ports:
-      - "8501:8501"
+      - "8502:8502"
     environment:
       - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
       - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
     volumes:
       - ./.streamlit:/app/.streamlit
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:8501/_stcore/health"]
+      test: ["CMD", "curl", "--fail", "http://localhost:8502/_stcore/health"]
       interval: 30s
       timeout: 10s
       retries: 3

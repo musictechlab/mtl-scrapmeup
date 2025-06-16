@@ -35,14 +35,14 @@ COPY . .
 RUN poetry install --only-root
 
 # Expose the port Streamlit runs on
-EXPOSE 8501
+EXPOSE 8502
 
 # Add healthcheck
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+HEALTHCHECK CMD curl --fail http://localhost:8502/_stcore/health || exit 1
 
 # Set environment variables
 ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 
 # Run the Streamlit app
-ENTRYPOINT ["streamlit", "run", "mtl_scrapmeup.py", "--server.port=8501", "--server.address=0.0.0.0"] 
+ENTRYPOINT ["streamlit", "run", "mtl_scrapmeup.py", "--server.port=8502", "--server.address=0.0.0.0"] 

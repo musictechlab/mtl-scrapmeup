@@ -41,6 +41,6 @@ SPOTIFY_CLIENT_SECRET=your_client_secret
    ```bash
    docker compose up --build
    ```
-4. Visit [http://localhost:8501](http://localhost:8501) in your browser.
+4. Visit [http://localhost:8502](http://localhost:8502) in your browser.
 
 The `.env` file will be used to pass your Spotify credentials to the container. The Streamlit configuration can be customized in the `.streamlit` directory if needed.
