@@ -1,5 +1,7 @@
 # MTL ScrapMeUp 🎵
 
+[![Built by MusicTech Lab](https://musictechlab.io/oss/build-by-musictechlab.io.svg)](https://musictechlab.io)
+
 Spotify Metadata Scraper built with Streamlit and Python 🐍. Paste a link to any Spotify album or track and get:
 
 - ✅ ISRC codes  
